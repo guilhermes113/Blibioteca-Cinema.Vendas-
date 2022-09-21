@@ -12,7 +12,7 @@ namespace Api.CinemaVendas.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class TicketController : ControllerBase
-        {
+    {
         private readonly ITicketService _ticketService;
         public TicketController(ITicketService ticketService)
         {
@@ -22,6 +22,7 @@ namespace Api.CinemaVendas.Controllers
         {
             return Ok(_ticketService.GetAllSold());
         }
+
     
     }
 }
